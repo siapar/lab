@@ -45,7 +45,6 @@ public class Book {
         this.year = year;
     }
 
-    @Override
     public boolean equals(Object o) {
         if (this == o)
             return true;
@@ -56,12 +55,10 @@ public class Book {
                 && Objects.equals(isbn, book.isbn);
     }
 
-    @Override
     public int hashCode() {
         return Objects.hash(title, author, isbn, year);
     }
 
-    @Override
     public String toString() {
         return "Tytuł='" + title + '\'' +
                 ", Autor='" + author + '\'' +
