@@ -9,17 +9,14 @@ public class BookManager implements BookOperations {
         this.books = new ArrayList<>();
     }
 
-    @Override
     public void addBook(Book book) {
         books.add(book);
     }
 
-    @Override
     public void removeBook(Book book) {
         books.remove(book);
     }
 
-    @Override
     public void updateBook(Book oldBook, Book newBook) {
         int index = books.indexOf(oldBook);
         if (index >= 0) {
@@ -27,7 +24,6 @@ public class BookManager implements BookOperations {
         }
     }
 
-    @Override
     public List<Book> getBooks() {
         return books;
     }
